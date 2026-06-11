@@ -16,8 +16,7 @@ const Discover = () => {
       if (query.trim().length > 1) search();
     }, 400);
     return () => clearTimeout(timeout);
-  }, [query]);
-
+}, [query]); // eslint-disable-line react-hooks/exhaustive-deps
   const search = async () => {
     setLoading(true);
     try {
