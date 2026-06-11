@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';// eslint-disable-line no-unused-vars
 import { users as usersApi, posts as postsApi } from '../services/api';
 import Navbar from '../components/Navbar';
 
