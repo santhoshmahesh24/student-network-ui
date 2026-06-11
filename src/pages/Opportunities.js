@@ -57,8 +57,7 @@ const Opportunities = () => {
   const [posting, setPosting] = useState(false);
   const currentUser = JSON.parse(localStorage.getItem('user') || '{}');
 
-  useEffect(() => { loadOpps(); }, [filter]);
-
+useEffect(() => { loadOpps(); }, [filter]); // eslint-disable-line react-hooks/exhaustive-deps
   const loadOpps = async () => {
     setLoading(true);
     try {
