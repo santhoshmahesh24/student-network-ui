@@ -18,8 +18,7 @@ const Profile = () => {
   const [loading, setLoading] = useState(true);
   const [connectMsg, setConnectMsg] = useState('');
 
-  useEffect(() => { loadProfile(); }, [profileId]);
-
+useEffect(() => { loadProfile(); }, [profileId]); // eslint-disable-line react-hooks/exhaustive-deps
   const loadProfile = async () => {
     setLoading(true);
     try {
